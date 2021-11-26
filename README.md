@@ -1,5 +1,5 @@
 # currencies-arbitrage
-Scala script implementing a solution to the [currencies arbitrage puzzle](https://priceonomics.com/jobs/puzzle/).
+Scala script implementation to solve the [currencies arbitrage puzzle](https://priceonomics.com/jobs/puzzle/).
 
 ## Short Description
 An MVC architecture has been used inside the script to seperate the different "layers" of the script. The **Model** object defines the core components of the script: the nodes, edges, graph and cycle enabling to represent and manipulate the edges and exchanges rates. The **View** object gathers the IO interactions functionnalities (requesting, decoding and verifying the raw data as well as preparing the output). Finally, the **Controller** object gathers data transformation and manipulation including the [Bellman-Ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) and negative cycles retracing used here to find the arbitrage loops.
